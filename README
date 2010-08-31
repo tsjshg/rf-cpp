@@ -1,0 +1,7 @@
+
+
+g++ -DNDEBUG -O2 -I /opt/local/include/boost/ -o RF /opt/local/lib/libboost_program_options-xgcc40-mt.a /opt/local/lib/libboost_serialization-xgcc40-mt.a random_forests.cpp
+
+$ RF -d [data file] -c [class file] -a [feature restriction list (if any)] -p [output prefile] -o [object file(any)] -t [the number of tree]
+$ python pp.py [output prefix]_data.txt
+produces [output prefix]_data_table.txt
